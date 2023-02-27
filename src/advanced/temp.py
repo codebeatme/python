@@ -1,3 +1,6 @@
+ddd = ['sd', 12, 22, 33]
+print(ddd[2:])
+
 player_life = 10
 enemy_life = 10
 
