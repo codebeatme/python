@@ -24,7 +24,7 @@ for line in lines:
         students.append(Student(name, age))
         
 while True:
-    text = input('请输入姓名和年龄以及成绩，使用空格分割：')
+    text = input('请输入姓名和年龄，使用空格分割：')
 
     if text == 'n':
         break
