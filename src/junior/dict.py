@@ -1,3 +1,6 @@
+# 视频内容：「Python」基础教程 如何理解字典？以及一个示例
+# 视频地址：https://www.bilibili.com/video/BV1954y1N7cD/
+
 table = {'name': '-', 'age': 0}
 
 while table['name'] == '-' or table['age'] == 0:

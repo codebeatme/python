@@ -1,23 +1,29 @@
-ddd = ['sd', 12, 22, 33]
-print(ddd[2:])
+###
+class Student:
 
-player_life = 10
-enemy_life = 10
+    def __init__(self, n, a):
+        self.name = n
+        self.age = a
 
-player_ap = 1
-enemy_ap = 3
+###
+students = []
 
 while True:
-    enemy_life -= player_ap
-    print(f'敌人受到玩家{player_ap}点伤害，剩余{enemy_life}点生命')
+    text = input('请输入姓名和年龄以及成绩，使用空格分割：')
 
-    if enemy_life <= 0:
-        print('敌人死亡，获得胜利')
+    if text == 'n':
         break
 
-    player_life -= enemy_ap
-    print(f'玩家受到敌人{enemy_ap}点伤害，剩余{player_life}点生命')
+    ###
+    args = text.split(' ')
 
-    if player_life <= 0:
-        print('玩家死亡，任务失败')
-        break
+    input_name = args[0]
+    input_age = int(args[1])
+
+    student = Student(input_name, input_age)
+
+    students.append(student)
+
+###
+for s in students:
+    print(f'学生{s.name} 年龄{s.age}')

@@ -1,3 +1,6 @@
+# 视频内容：「Python」进阶教程 如何实现类的继承？是什么继承
+# 视频地址：https://www.bilibili.com/video/BV1w54y137xB/
+
 ###
 class Unit:
 

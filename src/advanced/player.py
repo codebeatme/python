@@ -1,3 +1,6 @@
+# 视频内容：「Python」进阶教程 什么是类？如何创建和使用类
+# 视频地址：https://www.bilibili.com/video/BV13b411X7Za/
+
 class Player:
 
     def __init__(me):

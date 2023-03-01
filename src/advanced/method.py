@@ -1,3 +1,6 @@
+# 视频内容：「Python」进阶教程 什么是类的方法？如何创建调用类的方法
+# 视频地址：https://www.bilibili.com/video/BV1VY411r7wr/
+
 ###
 class Student:
 

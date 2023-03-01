@@ -1,3 +1,6 @@
+# 视频内容：「Python」基础教程 如何使用for循环？以及简单运用
+# 视频地址：https://www.bilibili.com/video/BV1aD4y1g7XW/
+
 ###
 students = ['小小', '花花', '明明']
 

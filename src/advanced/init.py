@@ -1,3 +1,6 @@
+# 视频内容：「Python」进阶教程 什么是构造方法？如何使用构造方法
+# 视频地址：https://www.bilibili.com/video/BV1vX4y197yt/
+
 class Student:
 
     def __init__(self, n, a):

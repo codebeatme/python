@@ -1,3 +1,6 @@
+# 视频内容：「Python」基础教程 如何理解while语句，如何跳出while循环
+# 视频地址：https://www.bilibili.com/video/BV1g54y1c7Js/
+
 text = input('请输入多个整数（中间使用空格分割）：')
 
 nums = text.split(' ')
