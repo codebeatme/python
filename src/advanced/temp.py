@@ -1,29 +1,4 @@
-###
-class Student:
+pw = input('请输入密码：')
 
-    def __init__(self, n, a):
-        self.name = n
-        self.age = a
-
-###
-students = []
-
-while True:
-    text = input('请输入姓名和年龄以及成绩，使用空格分割：')
-
-    if text == 'n':
-        break
-
-    ###
-    args = text.split(' ')
-
-    input_name = args[0]
-    input_age = int(args[1])
-
-    student = Student(input_name, input_age)
-
-    students.append(student)
-
-###
-for s in students:
-    print(f'学生{s.name} 年龄{s.age}')
+if pw == '123456':
+    print('这是世界上最糟糕也最常见的密码！')
