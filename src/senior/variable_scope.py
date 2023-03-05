@@ -1,3 +1,6 @@
+# 视频内容：「Python」高级教程 什么是变量的作用域？函数能否访问模块变量
+# 视频地址：https://www.bilibili.com/video/BV1JN411c7ML/
+
 ###
 defence = 10
 

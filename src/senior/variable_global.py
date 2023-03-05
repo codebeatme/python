@@ -1,3 +1,6 @@
+# 视频内容：「Python」高级教程 如何使用global在函数方法中修改模块变量
+# 视频地址：https://www.bilibili.com/video/BV1bT411e7oa/
+
 ###
 defence = 10
 
