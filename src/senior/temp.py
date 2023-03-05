@@ -1,20 +1,14 @@
-###
-class Student:
-    ###
-        
-    ###
-    def __init__(self, n, a, s):
-        self.name = n
-        self.age = a
-        self.scores = s
+def foo():
+    x = 20
 
-###
-text = input('请输入姓名和年龄以及成绩，使用空格分割：')
+    def bar():
+        global x
+        x = 25
+    
+    print("在调用bar之前: ", x)
+    print("立即调用bar")
+    bar()
+    print("在调用bar之后: ", x)
 
-args = text.split(' ')
-input_name = args[0]
-input_age = int(args[1])
-input_scores = args[2:]
-
-s = Student(input_name, input_age, input_scores)
-###
+foo()
+print("x在主体内: ", x)
