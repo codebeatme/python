@@ -1,3 +1,5 @@
+# 视频内容：「Python」高级教程 如何定义类的私有字段和方法？私有成员的作用是什么
+# 视频地址：https://www.bilibili.com/video/BV1HM4y1k7fU/
 
 ###
 class Unit:

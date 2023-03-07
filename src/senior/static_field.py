@@ -1,3 +1,6 @@
+# 视频内容：「Python」高级教程 如何定义和使用类的静态字段？静态字段的作用是什么
+# 视频地址：https://www.bilibili.com/video/BV18M4y1k7H8/
+
 ###
 class Unit:
     count = 0

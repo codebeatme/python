@@ -7,31 +7,16 @@ class Unit:
         self.dead = False
         Unit.count += 1
 
-    ###
-    def hurt(self, damage):
-        self.hp -= damage
-        print(f'一个单位受到{damage}点伤害')
-
-        if self.hp <= 0:
-            self.dead = True
-            Unit.count -= 1
-            print(f'一个单位死亡，剩余{Unit.count}个单位')
-
 ###
-import random
+u1 = Unit(10)
+u2 = Unit(10)
+print(f'Unit.count={Unit.count}')
+print(f'u1.count={u1.count}')
+print(f'u2.count={u2.count}')
 
-units = [Unit(10), Unit(15), Unit(20)]
-game_over = False
-
-while not game_over:
-
-    for unit in units:
-        if not unit.dead:
-            damage = random.randint(0, 10)
-            unit.hurt(damage)
-
-            if Unit.count == 1:
-                game_over = True
-                break
-    
-print('游戏结束')
+u1.count = 0
+u3 = Unit(10)
+print(f'u1.count={u1.count}')
+print(f'u2.count={u2.count}')
+print(f'u3.count={u3.count}')
+print(f'Unit.count={Unit.count}')
