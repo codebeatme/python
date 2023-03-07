@@ -19,7 +19,6 @@ class Unit:
 
 ###
 import random
-
 units = [Unit(10), Unit(15), Unit(20)]
 game_over = False
 
@@ -33,5 +32,5 @@ while not game_over:
             if Unit.count == 1:
                 game_over = True
                 break
-    
+
 print('游戏结束')
