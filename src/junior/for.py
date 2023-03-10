@@ -1,4 +1,4 @@
-# 视频内容：「Python」基础教程 如何使用for循环？以及简单运用
+# 视频内容：「Python」基础教程 循环语句for的书写格式，for语句可以遍历的目标有哪些
 # 视频地址：https://www.bilibili.com/video/BV1aD4y1g7XW/
 
 ###

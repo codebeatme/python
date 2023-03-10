@@ -1,4 +1,4 @@
-# 视频内容：「Python」基础教程 如何更好的理解列表和元组
+# 视频内容：「Python」基础教程 什么是列表和元组？列表和元组的书写格式以及区别
 # 视频地址：https://www.bilibili.com/video/BV1ay4y1Q7Lt/
 
 ###

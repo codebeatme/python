@@ -1,3 +1,6 @@
+# 视频内容：「Python」高级教程 类和实例访问静态字段时有什么不同
+# 视频地址：https://www.bilibili.com/video/BV1YM41147Hw/
+
 ###
 class Unit:
     count = 0

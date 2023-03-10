@@ -1,4 +1,4 @@
-# 视频内容：「Python」基础教程 如何定义函数？如何调用函数
+# 视频内容：「Python」基础教程 函数有什么作用？如何定义函数
 # 视频地址：https://www.bilibili.com/video/BV1wy4y1o72X/
 
 ###

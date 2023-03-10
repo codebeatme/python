@@ -1,4 +1,4 @@
-# 视频内容：「Python」基础教程 如何理解if语句？if语句格式和示例代码
+# 视频内容：「Python」基础教程 什么是条件控制语句？if语句的书写格式
 # 视频地址：https://www.bilibili.com/video/BV1MM4y1Z7qg/
 
 ###
