@@ -1,4 +1,4 @@
-# 视频内容：「Python」进阶教程 如何使用datetime获取当前日期时间
+# 视频内容：「Python」进阶教程 日期时间有什么用？如何获取当前日期时间
 # 视频地址：https://www.bilibili.com/video/BV16N411F7ko/
 
 import datetime

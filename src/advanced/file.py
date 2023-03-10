@@ -1,4 +1,4 @@
-# 视频内容：「Python」进阶教程 如何读取写入文件？如何打开关闭文件
+# 视频内容：「Python」进阶教程 什么是文件？如何读取写入文件？文件读写相关函数介绍
 # 视频地址：https://www.bilibili.com/video/BV1GM4y1o7Qi/
 
 ###

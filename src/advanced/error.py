@@ -1,4 +1,4 @@
-# 视频内容：「Python」进阶教程 如何处理异常？try语句如何使用
+# 视频内容：「Python」进阶教程 什么是异常？如何处理异常？try except语句的书写格式
 # 视频地址：https://www.bilibili.com/video/BV1kD4y1u7YB/
 
 ###

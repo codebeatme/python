@@ -1,4 +1,4 @@
-# 视频内容：「Python」进阶教程 类的方法如何重写？什么是方法重写
+# 视频内容：「Python」进阶教程 方法重写有什么用？如何实现类的方法重写？使用super访问父类
 # 视频地址：https://www.bilibili.com/video/BV1qg4y1J7y1/
 
 ###

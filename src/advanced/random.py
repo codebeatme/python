@@ -1,4 +1,4 @@
-# 视频内容：「Python」进阶教程 如何生成随机数？random和randint区别
+# 视频内容：「Python」进阶教程 随机数有什么用？如何生成随机数？random和randint的区别
 # 视频地址：https://www.bilibili.com/video/BV1J24y1V7XX/
 
 ###
