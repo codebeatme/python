@@ -1,4 +1,4 @@
-# 视频内容：「Python」高级教程 什么是内部类？如何定义使用内部类
+# 视频内容：「Python」高级教程 什么是内部类？如何定义和使用内部类
 # 视频地址：https://www.bilibili.com/video/BV1zv4y1b7iV/
 
 ###

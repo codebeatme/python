@@ -1,4 +1,4 @@
-# 视频内容：「Python」高级教程 如何使用global在函数方法中修改模块变量
+# 视频内容：「Python」高级教程 函数和方法如何修改模块变量？关键字global的作用以及书写格式
 # 视频地址：https://www.bilibili.com/video/BV1bT411e7oa/
 
 ###

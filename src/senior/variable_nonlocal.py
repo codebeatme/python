@@ -1,4 +1,4 @@
-# 视频内容：「Python」高级教程 nonlocal有什么用？内部函数如何修改上级函数的变量
+# 视频内容：「Python」高级教程 如何修改上一级变量？关键字nonlocal的作用以及书写格式
 # 视频地址：https://www.bilibili.com/video/BV1Bo4y1z7uD/
 
 ###

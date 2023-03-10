@@ -1,3 +1,6 @@
+# 视频内容：「Python」高级教程 如何定义和调用类的静态方法？staticmethod与classmethod的区别
+# 视频地址：https://www.bilibili.com/video/BV1kM4y1k7fg/
+
 ###
 class Unit:
     count = 0
