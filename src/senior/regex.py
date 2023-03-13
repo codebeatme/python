@@ -1,3 +1,6 @@
+# 视频内容：「Python」高级教程 如何使用正则表达式？如何查找替换符合正则表达式的字符串
+# 视频地址：https://www.bilibili.com/video/BV1524y137jA/
+
 ###
 import re
 

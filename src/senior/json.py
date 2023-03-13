@@ -1,3 +1,6 @@
+# 视频内容：「Python」高级教程 什么是JSON？JSON的书写格式，JSON与Python对象之间的转换
+# 视频地址：https://www.bilibili.com/video/BV1cN411F7Nn/
+
 import json
 
 data = json.loads('{"count":2,"news":[{"id":1,"title":"今日天气"},{"id":2,"title":"明日天气"}]}')

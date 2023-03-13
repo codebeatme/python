@@ -1,4 +1,4 @@
-# 视频内容：「Python」基础教程 什么是集合？集合的书写格式，集合和列表的区别
+# 视频内容：「Python」基础教程 什么是集合？集合和列表的区别
 # 视频地址：https://www.bilibili.com/video/BV1Dj411N7JA/
 
 ###
