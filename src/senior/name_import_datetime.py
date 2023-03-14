@@ -1,4 +1,4 @@
-import name_datetime
+# 视频内容：「Python」高级教程 什么是内置变量？__name__的作用，如何运用__name__变量
+# 视频地址：https://www.bilibili.com/video/BV1FY4y1R7hG/
 
-name_datetime.aaa = 2
-print(f'name_datetime.py __name__：{name_datetime.__name__}')
+import name_datetime
