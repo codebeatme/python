@@ -1,14 +1,6 @@
 '''
-JSON是一種結構化資料格式，常見於網路的資訊傳輸
-* JSON的書寫格式類似於字典，串列
-* JSON可由單個字串，數值，布林值或null組成
-* json模組可以編碼或解碼JSON
-
-版本
-Python 3.11.2
-VSCode 1.76.1
-
-關於本系列教程的使用說明和相關問題解答，請參考文章 https://www.bilibili.com/read/cv23030766
+本節文章
+https://learnscript.net/zh-hant/python/senior/parse-and-stringify-json/ 如何解析和字串化 JSON
 '''
 
 # 匯入模組

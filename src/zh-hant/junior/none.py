@@ -1,3 +1,8 @@
+'''
+本節文章
+https://learnscript.net/zh-hant/python/junior/represent-and-judge-null/ 如何表示和判斷空值
+'''
+
 # 用 None 來表示 age 中還沒有真正的年齡
 age = None
 

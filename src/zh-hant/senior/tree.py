@@ -1,3 +1,8 @@
+'''
+本節文章
+https://learnscript.net/zh-hant/python/senior/judge-application-entry-point/ 如何判斷程式進入點
+'''
+
 print('這裏是關於樹的模組！')
 
 class Tree:

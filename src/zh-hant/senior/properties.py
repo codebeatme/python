@@ -1,3 +1,8 @@
+'''
+本節文章
+https://learnscript.net/zh-hant/python/senior/define-class-properties/ 如何定義類別的屬性
+'''
+
 class Worker:
     # 類別 Worker，表示一位員工
 

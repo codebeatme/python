@@ -1,14 +1,6 @@
 '''
-規則運算式可用來判斷字串是否匹配某種規則，或尋找取代字串中匹配規則的內容
-* match函式可判斷整個字串是否匹配規則
-* search函式可尋找字串中匹配規則的部分
-* sub函式可取代字串中匹配規則的部分
-
-版本
-Python 3.11.2
-VSCode 1.76.1
-
-關於本系列教程的使用說明和相關問題解答，請參考文章 https://www.bilibili.com/read/cv23030766
+本節文章
+https://learnscript.net/zh-hant/python/senior/regular-expressions/ 如何使用規則運算式
 '''
 
 ###

@@ -1,3 +1,8 @@
+'''
+本節文章
+https://learnscript.net/zh-hant/python/senior/implementing-callbacks/ 如何實現回呼
+'''
+
 # 匯入關於執行緒的模組
 import threading
 
