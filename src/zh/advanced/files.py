@@ -15,10 +15,10 @@ class Student:
         self.age = a
 
 
-# 从文件 D:/student.txt 读取学生信息
+# 从文件 student.txt 读取学生信息
 students = []
 
-file = open('D:/student.txt', 'r')
+file = open('student.txt', 'r')
 lines = file.readlines()
 file.close()
 
@@ -57,7 +57,7 @@ for s in students:
     lines.append(f'{s.name} {s.age}\n')
     print(f'学生{s.name} 年龄 {s.age}')
 
-# 将列表 lines 写入到文件 D:/student.txt
-file = open('D:/student.txt', 'w')
+# 将列表 lines 写入到文件 student.txt
+file = open('student.txt', 'w')
 file.writelines(lines)
 file.close()
