@@ -5,3 +5,5 @@ __pycache__/
 temp.py
 last_login.txt
 student.txt
+*.pyc
+*.zip

@@ -12,7 +12,7 @@ while True:
     # 輸入密碼 123456，認為是登入成功
     if pw == '123456':
         # 讀取儲存在 last_login.txt 中的上一次的登入時間
-        file_path = 'D:/last_login.txt'
+        file_path = 'last_login.txt'
 
         file = open(file_path, 'r')
         last_time = file.readline()

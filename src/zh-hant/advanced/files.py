@@ -15,10 +15,10 @@ class Student:
         self.age = a
 
 
-# 從檔案 D:/student.txt 讀取學生資訊
+# 從檔案 student.txt 讀取學生資訊
 students = []
 
-file = open('D:/student.txt', 'r')
+file = open('student.txt', 'r')
 lines = file.readlines()
 file.close()
 
@@ -57,7 +57,7 @@ for s in students:
     lines.append(f'{s.name} {s.age}\n')
     print(f'學生{s.name} 年齡 {s.age}')
 
-# 將串列 lines 寫入到檔案 D:/student.txt
-file = open('D:/student.txt', 'w')
+# 將串列 lines 寫入到檔案 student.txt
+file = open('student.txt', 'w')
 file.writelines(lines)
 file.close()
