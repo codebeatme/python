@@ -1,6 +1,6 @@
 '''
 本節文章
-https://learnscript.net/zh-hant/python/advanced/implementing-class-inheritance/ 如何實現類別的繼承
+https://learnscript.net/zh-hant/python/advanced/implementing-class-inheritance/ 如何實作類別的繼承
 '''
 
 ###

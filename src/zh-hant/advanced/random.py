@@ -1,6 +1,6 @@
 '''
 本節文章
-https://learnscript.net/zh-hant/python/advanced/generate-random-numbers/ 如何產生隨機亂數
+https://learnscript.net/zh-hant/python/advanced/generate-random-numbers/ 如何建置隨機亂數
 '''
 
 ### 匯入 random 模組
@@ -29,7 +29,7 @@ class Unit:
     def attack(self, target):
         # 方法 attack 用來攻擊另一個遊戲單位
 
-        # 通過 randint 產生一個隨機的傷害值
+        # 通過 randint 建置一個隨機的傷害值
         damage = self.power + random.randint(-10, 10)
 
         # 根據傷害值減少生命值，小於等於 0 傳回 True，表示單位被擊敗

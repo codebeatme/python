@@ -5,7 +5,7 @@ https://learnscript.net/zh-hant/python/senior/define-and-call-nested-functions/ 
 
 ###
 def main():
-    # 主函式 main，實現一個傻傻的聊天機器人
+    # 主函式 main，實作一個傻傻的聊天機器人
 
     ###
     def show_message(text):

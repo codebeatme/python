@@ -1,6 +1,6 @@
 '''
 本節文章
-https://learnscript.net/zh-hant/python/junior/common-data-types/ 常見資料型別有哪些
+https://learnscript.net/zh-hant/python/junior/common-data-types/ 常見資料類型有哪些
 '''
 
 ###

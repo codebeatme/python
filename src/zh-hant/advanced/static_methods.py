@@ -15,7 +15,7 @@ class Unit:
     ###
     @staticmethod
     def random_id():
-        # 靜態方法 random_id，用於產生一個隨機 id
+        # 靜態方法 random_id，用於建置一個隨機 id
         import random
         num = random.randint(1, 10000000)
         return f'id_{num}'
@@ -28,7 +28,7 @@ class Unit:
 
     ###
     def __init__(self, hp):
-        # 產生一個隨機 id，並儲存在 id 欄位中
+        # 建置一個隨機 id，並儲存在 id 欄位中
         self.id = self.random_id()
         self.hp = hp
         Unit.count += 1

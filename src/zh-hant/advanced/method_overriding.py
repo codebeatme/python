@@ -1,6 +1,6 @@
 '''
 本節文章
-https://learnscript.net/zh-hant/python/advanced/implementing-method-overriding/ 如何實現方法覆寫
+https://learnscript.net/zh-hant/python/advanced/implementing-method-overriding/ 如何實作方法覆寫
 '''
 
 ###
