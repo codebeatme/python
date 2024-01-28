@@ -17,7 +17,7 @@ class Hero(Unit):
     # 類別 Hero，繼承自 Unit，表示玩家控製的英雄
 
     def __init__(self, hp, power, name):
-        # 通過 super() 來存取基礎類別 Unit 的建構方法
+        # 通過 super() 來存取基底類別 Unit 的建構方法
         super().__init__(hp, power)
         # 對比 Unit 類別，增加一個表示名字的欄位 name
         self.name = name
