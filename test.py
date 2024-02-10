@@ -1,20 +1,13 @@
-# 一个用于构造邮箱正则表达式的字符串
-pattern = (
-    '\\b[\\w.%-]+' # 邮箱中 @ 前的部分
-    '@' # 邮箱中的 @
-    '[a-zA-Z0-9.\\-]+\\.[a-zA-Z]{2,4}' # 邮箱中 @ 后的部分
-)
+b = 1
 
-import re
-print(re.search(pattern, "xiao_xiao" '@'    '''live.com'''))
+def a(a1: str|int, **aaa) -> int:
+    '''nihao
+    nihao
+        sdfd'''
+    
+    print(aaa)
 
-print(type(1+3j).__str__('d11'))
-print(repr(1+3j))
-bytes
-bytearray
-import array
-a = array.array[int]()
-a.append(12)
-memoryview
-str(array.array())
-float
+a(111,abc=123)
+
+dd= lambda x=1,*a,**y: return x
+print(dd())

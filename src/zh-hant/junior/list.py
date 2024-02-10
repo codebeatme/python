@@ -12,7 +12,7 @@ while True:
 
     name = input('請輸入學生姓名（輸入 n 結束）：')
 
-    # 輸入 n，執行 break 陳述式跳出迴圈，否則將添加學生到 students 串列
+    # 輸入 n，執行 break 陳述式跳出迴圈，否則將新增學生到 students 串列
     if name == 'n':
         break
     else:

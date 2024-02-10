@@ -7,8 +7,3 @@ pattern = (
 
 import re
 print(re.search(pattern, "xiao_xiao" '@'	'''live.com'''))
-
-import string
-string.capwords()
-
-''.format()

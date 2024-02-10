@@ -6,7 +6,7 @@ https://learnscript.net/zh-hant/python/junior/for-statement/ 如何使用 for �
 ###
 students = ['小小', '花花', '明明']
 
-# 教師添加學生，直至輸入了 n
+# 教師新增學生，直至輸入了 n
 while True:
     print('當前名單：', students)
 
