@@ -72,8 +72,6 @@ Student.set_count(100)
 student.show()
 Student.show()
 
-Student()
-
 # 一个表示教师的类 Teacher
 class Teacher:
 	# 构造器

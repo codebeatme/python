@@ -72,8 +72,6 @@ Student.set_count(100)
 student.show()
 Student.show()
 
-Student()
-
 # 一個表示教師的類別 Teacher
 class Teacher:
 	# 建構子
