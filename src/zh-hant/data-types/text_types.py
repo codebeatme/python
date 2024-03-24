@@ -7,3 +7,8 @@ pattern = (
 
 import re
 print(re.search(pattern, "xiao_xiao" '@'	'''live.com'''))
+print(''.count(sub=''))
+''.startswith
+
+range
+str
