@@ -2,33 +2,33 @@ from enum import *
 
 
 class SPORT(Enum):
-    '''一个关于运动的枚举，包含了篮球，足球和棒球'''
+    '''一個關於運動的列舉，包含了籃球，足球和棒球'''
     FOOTBALL = 1
     BASKETBALL = 2
     BASEBALL = 3
     SOCCER = 1
 
 
-# 定义枚举 PLANT
+# 定義列舉 PLANT
 PLANT = StrEnum('PLANT', (['TREE', 'one tree'], ['FLOWER', 'one flower']))
 print(PLANT.__members__)
 
 
 print(type(SPORT.FOOTBALL))
-# 判断成员 FOOTBALL 是否为 SPORT 的实例
+# 判斷成員 FOOTBALL 是否為 SPORT 的執行個體
 print(isinstance(SPORT.FOOTBALL, SPORT))
     
-# 枚举成员 A 和 B 将出现在模块中
+# 列舉成員 A 和 B 將出現在模組中
 @global_enum
 class LETTER(Enum):
     A = 'a'
     B = 'b'
 
-# 下面的访问方式都是正确的
+# 下面的存取方式都是正確的
 print(LETTER.A)
 print(A)
 
-# 枚举 NUM 的成员的值需要是连贯的
+# 列舉 NUM 的成員的值需要是連貫的
 @verify(CONTINUOUS)
 class NUM(Enum):
     ONE = 1
@@ -38,11 +38,11 @@ class NUM(Enum):
 
 class POSITION(Enum):
     _ignore_ = ('Z', 'W')
-    # X 不是枚举成员
+    # X 不是列舉成員
     X = nonmember(1)
-    # Y 是枚举成员
+    # Y 是列舉成員
     Y = 2
-    # Z 和 W 不是枚举成员，虽然 W 使用了 member
+    # Z 和 W 不是列舉成員，雖然 W 使用了 member
     Z = 3
     W = member(4)
 
@@ -51,20 +51,20 @@ print(POSITION.__members__)
 print(SPORT.SOCCER)
 print(SPORT.SOCCER.name)
 
-# 这里不会出现 SOCCER，因为他是 FOOTBALL 的别名
+# 這裏不會出現 SOCCER，因為他是 FOOTBALL 的別名
 for i in SPORT:
     print(f'{i.name}={i.value}')
 
 
-# 可以将 @verify(UNIQUE) 替换为 @unique
+# 可以將 @verify(UNIQUE) 取代為 @unique
 @verify(UNIQUE)
 class ROLE(Enum):
     PLAYER = 1
-    # ERROR 这里不能出现别名
+    # ERROR 這裏不能出現別名
     # HERO = 1
 
 
-# 显示 SPORT 的全部成员，包括 SOCCER
+# 顯示 SPORT 的全部成員，包括 SOCCER
 print(SPORT.__members__)
 
 print(SPORT.FOOTBALL == SPORT.SOCCER)
@@ -72,7 +72,7 @@ print(SPORT.FOOTBALL != 1)
 
 football = SPORT.FOOTBALL
 
-# 重新定义枚举 SPORT
+# 重新定義列舉 SPORT
 
 
 class SPORT(Enum):
@@ -82,12 +82,12 @@ class SPORT(Enum):
     SOCCER = 1
 
 
-# 比较之前和新的枚举成员 FOOTBALL，返回 False
+# 比較之前和新的列舉成員 FOOTBALL，傳回 False
 print(football == SPORT.FOOTBALL)
 
 
 class DIRECTION(Enum):
-    # 需要定义在所有枚举成员之前
+    # 需要定義在所有列舉成員之前
     @staticmethod
     def _generate_next_value_(name, start, count, last_values):
         return f'{name}_{count}'
@@ -95,7 +95,7 @@ class DIRECTION(Enum):
     UP = auto()
     RIGHT = auto()
     DOWN = 100
-    # 将根据 100 返回 101
+    # 將根據 100 傳回 101
     LEFT = auto()
 
 
@@ -105,7 +105,7 @@ class DAY(str, ReprEnum):
     MONDAY = 1
     TUESDAY = 2
 
-    # self 代表了枚举成员
+    # self 代表了列舉成員
     def show(self):
         print(f'{self.name}={self.value}')
 
@@ -113,12 +113,12 @@ DAY.TUESDAY.show()
 
 class SPEED(int, Enum):
     def __new__(cls, *args):
-        # 计算所有数字的和，并保存至 total
+        # 計算所有數值的和，並儲存至 total
         total = 0
         for i in args:
             total += i
 
-        # 创建枚举的实例，并将之前的计算结果赋值给 _value_
+        # 建立列舉的執行個體，並將之前的計算結果指派給 _value_
         prop = int.__new__(cls)
         prop._value_ = total
         return prop
@@ -133,17 +133,17 @@ class JOB(IntEnum):
     WORKER = 1
     DOCTOR = '100', 8
 
-# 参与算术运算后，运算结果不再是某个枚举成员
+# 參與算術運算後，運算結果不再是某個列舉成員
 print(f'{type(JOB.WORKER)} {type(JOB.DOCTOR)}')
 print(type(JOB.WORKER + 3))
 print(type(JOB.WORKER + JOB.DOCTOR))
 
 class HERO(str, ReprEnum):
-    # 123 会被转换为 '123'
+    # 123 會被轉換為 '123'
     TOM = 123
     JERRY = 'mouse?'
 
 class TIME(StrEnum):
     SECOND = 'sec'
-    # ERROR 1 并不会转换为 '1'
+    # ERROR 1 並不會轉換為 '1'
     MINUTE = 1
