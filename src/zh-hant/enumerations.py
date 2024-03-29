@@ -1,4 +1,5 @@
 from enum import *
+from typing import Any
 
 
 class SPORT(Enum):
@@ -70,6 +71,9 @@ print(SPORT.__members__)
 print(SPORT.FOOTBALL == SPORT.SOCCER)
 print(SPORT.FOOTBALL != 1)
 
+# 取得列舉 NUM 中已經定義的成員的個數
+print(f'NUM 成員的個數為：{len(NUM)}')
+
 football = SPORT.FOOTBALL
 
 # 重新定義列舉 SPORT
@@ -128,6 +132,27 @@ class SPEED(int, Enum):
 
 print(SPEED.LOW.value)
 
+
+class ANIMAL(Enum):
+    DOG = 100
+    CAT = 200
+
+    # 處理超出取值範圍的列舉成員
+    @classmethod
+    def _missing_(cls, value):
+        if type(value) is int:
+            if value < 100:
+                # 小於 100 的整數，將被認為是 DOG
+                return ANIMAL.DOG
+            elif value < 200:
+                # 大於 100 小於 200 的整數，將被認為是 CAT
+                return ANIMAL.CAT
+            
+        # 其余取值傳回 None，這將導致例外狀況的發生
+        return None
+
+print(ANIMAL(99))
+print(ANIMAL(111))
 
 class JOB(IntEnum):
     WORKER = 1
