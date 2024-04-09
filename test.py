@@ -1,4 +1,4 @@
-class Teacher:
+class Teacher1:
     # 類別 Teacher，表示了教師
 
     def __init__(self, n, a):
