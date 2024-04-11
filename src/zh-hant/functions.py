@@ -39,6 +39,20 @@ def mlp(*nums, **info):
 # 傳遞了多個數值進行乘法計算
 print(mlp(2, 3, 4, 5, tip='這裏是一個小小的提示'))
 
+# 該函式將被之後定義的 wait 覆蓋
+def wait(seconds):
+    print(f'等待 {seconds} 秒')
+
+# 呼叫的是最先定義的 wait 函式
+wait(3)
+
+# 該函式將覆蓋之前定義的 wait
+def wait(hours, minutes=5):
+    print(f'等待 {hours} 小時 {minutes} 分')
+
+# 呼叫的是最後定義的 wait 函式
+wait(3)
+
 # 在模組中定義變數 message
 message = '我是一個模組變數'
 

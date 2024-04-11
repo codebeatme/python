@@ -39,6 +39,20 @@ def mlp(*nums, **info):
 # 传递了多个数字进行乘法计算
 print(mlp(2, 3, 4, 5, tip='这里是一个小小的提示'))
 
+# 该函数将被之后定义的 wait 覆盖
+def wait(seconds):
+    print(f'等待 {seconds} 秒')
+
+# 调用的是最先定义的 wait 函数
+wait(3)
+
+# 该函数将覆盖之前定义的 wait
+def wait(hours, minutes=5):
+    print(f'等待 {hours} 小时 {minutes} 分')
+
+# 调用的是最后定义的 wait 函数
+wait(3)
+
 # 在模块中定义变量 message
 message = '我是一个模块变量'
 
