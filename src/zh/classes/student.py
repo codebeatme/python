@@ -35,3 +35,7 @@ Student.set_count(100)
 # 调用类方法 show
 student.show()
 Student.show()
+
+# 获取 Student 类和之前创建的实例 student 的类型信息
+print(student.__class__)
+print(Student.__class__)

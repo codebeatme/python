@@ -35,3 +35,7 @@ Student.set_count(100)
 # 呼叫類別方法 show
 student.show()
 Student.show()
+
+# 取得 Student 類別和之前建立的執行個體 student 的型別資訊
+print(student.__class__)
+print(Student.__class__)
