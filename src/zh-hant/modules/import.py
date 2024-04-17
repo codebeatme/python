@@ -21,4 +21,3 @@ t.show()
 # 通過模組呼叫所謂的私用特性
 t._add_avg_age(1)
 print(f'現在的平均年齡是 {t.__avg_age}')
-

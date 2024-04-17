@@ -171,4 +171,18 @@ class HERO(str, ReprEnum):
 class TIME(StrEnum):
     SECOND = 'sec'
     # ERROR 1 並不會轉換為 '1'
-    MINUTE = 1
+    # MINUTE = 1
+
+# class AAA(Enum):
+#     # def a(self):
+#     #     pass
+#     # _ignore_ = ('a', 'W')
+#     ABC = auto()
+#     # 需要定義在所有列舉成員之前
+#     @staticmethod
+#     def _generate_next_value_(name, start, count, last_values):
+#         return f'{name}_{count}'
+#     ABC2 = auto()
+
+
+# # AAA.a > 0

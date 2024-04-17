@@ -21,4 +21,3 @@ t.show()
 # 通过模块调用所谓的私有特性
 t._add_avg_age(1)
 print(f'现在的平均年龄是 {t.__avg_age}')
-
