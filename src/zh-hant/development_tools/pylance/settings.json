@@ -1,0 +1,87 @@
+{
+    // 最嚴格的模式 strict
+    "python.analysis.typeCheckingMode": "strict",
+    // 診斷工作區中的所有 Python 程式碼檔案
+    "python.analysis.diagnosticMode": "workspace",
+    // 需要被診斷的檔案的路徑資訊
+    "python.analysis.include": [
+        // 以 s 和 c 開頭的三個字元的資料夾
+        "s?c\\",
+        // src 資料夾的一級子資料夾
+        "src\\*\\",
+        // src 資料夾或其任意子資料夾中，以 s.py 結尾的檔案或資料夾
+        "src\\**\\*s.py"
+    ],
+    // 不需要診斷的檔案的路徑資訊
+    "python.analysis.exclude": [
+        // src 資料夾或其任意子資料夾中，以 test.py 結尾的檔案或資料夾
+        "src\\**\\*test.py"
+    ],
+    // 忽略診斷結果的檔案的路徑資訊
+    "python.analysis.ignore": [
+        // src 資料夾中名稱包含 test 的一級子資料夾
+        "src\\*test*\\"
+    ],
+    // 自訂 Python 型別檢查規則的嚴重性層級
+    "python.analysis.diagnosticSeverityOverrides": {
+        // 無法被解析的匯入
+        "reportMissingImports": "warning"
+    },
+    // 指定型別虛設常式檔案目錄為工作區的 my_typings 資料夾
+    "python.analysis.stubPath": "my_typings",
+    // 不分析模組對應的程式碼檔案，當型別虛設常式檔案不存在時
+    "python.analysis.useLibraryCodeForTypes": false,
+    // 設定額外的 Python 模組路徑
+    "python.analysis.extraPaths": [
+        // 在工作區根目錄的 extra.zip 中搜尋模組
+        "extra.zip"
+    ],
+    // 停用 Python 模組自動搜尋路徑
+    "python.analysis.autoSearchPaths": false,
+    // 停用 Python 索引編製功能
+    "python.analysis.indexing": false,
+    // 不對工作區中的 Python 程式碼檔案編製索引，除非是開啟的檔案
+    "python.analysis.userFileIndexingLimit": 0,
+    // 設定名稱為 just_test 的第三方套件的索引編製方案
+    "python.analysis.packageIndexDepths": [
+        { "name": "just_test", "depth": 3, "includeAllSymbols": true }
+    ],
+    // 啟用匯入陳述式的自動完成
+    "python.analysis.autoImportCompletions": true,
+    // 匯入陳述式的自動完成采用相對名稱
+    "python.analysis.importFormat": "relative",
+    // 啟用函式或方法的括號自動完成
+    "python.analysis.completeFunctionParens": true,
+    // 啟用字串的 f 首碼自動完成（可能沒有效果）
+    "python.analysis.autoFormatStrings": true,
+    // 啟用變數型別的內嵌提示
+    "python.analysis.inlayHints.variableTypes": true,
+    // 啟用函式或方法傳回值的型別內嵌提示
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    // 啟用對所有參數的名稱內嵌提示
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    // 啟用針對 pytest 函式或方法參數型別的內嵌提示
+    "python.analysis.inlayHints.pytestParameters": true,
+    // 停用對 pytest 的支援，這將導致對 pytestParameters 的設定無效
+    "python.analysis.enablePytestSupport": false,
+    // 設定在執行 Fix All 命令時的行為
+    "python.analysis.fixAll": [
+        "source.unusedImports",
+        "source.convertImportFormat"
+    ],
+    // 指向外部 Node.js（無法在 VSCode 工作區設定中使用）
+    "python.analysis.nodeExecutable": "node",
+    // 停用字串的模組導航功能
+    "python.analysis.gotoDefinitionInStringLiteral": false,
+    // 設定 Pylance 僅匯報錯誤
+    "python.analysis.logLevel": "Error",
+    // 為所有主題自訂 Python 語法醒目提示
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            // 指定類別的色彩
+            "class:python": "#da9797",
+            // 指定宣告的色彩，比如，類別和函式的定義
+            "*.declaration:python": "#82cb7a"
+        }
+    }
+}

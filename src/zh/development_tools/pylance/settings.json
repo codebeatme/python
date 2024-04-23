@@ -1,0 +1,87 @@
+{
+    // 最严格的模式 strict
+    "python.analysis.typeCheckingMode": "strict",
+    // 诊断工作区中的所有 Python 代码文件
+    "python.analysis.diagnosticMode": "workspace",
+    // 需要被诊断的文件的路径信息
+    "python.analysis.include": [
+        // 以 s 和 c 开头的三个字符的文件夹
+        "s?c\\",
+        // src 文件夹的一级子文件夹
+        "src\\*\\",
+        // src 文件夹或其任意子文件夹中，以 s.py 结尾的文件或文件夹
+        "src\\**\\*s.py"
+    ],
+    // 不需要诊断的文件的路径信息
+    "python.analysis.exclude": [
+        // src 文件夹或其任意子文件夹中，以 test.py 结尾的文件或文件夹
+        "src\\**\\*test.py"
+    ],
+    // 忽略诊断结果的文件的路径信息
+    "python.analysis.ignore": [
+        // src 文件夹中名称包含 test 的一级子文件夹
+        "src\\*test*\\"
+    ],
+    // 自定义 Python 类型检查规则的严重性级别
+    "python.analysis.diagnosticSeverityOverrides": {
+        // 无法被解析的导入
+        "reportMissingImports": "warning"
+    },
+    // 指定类型存根文件目录为工作区的 my_typings 文件夹
+    "python.analysis.stubPath": "my_typings",
+    // 不分析模块对应的代码文件，当类型存根文件不存在时
+    "python.analysis.useLibraryCodeForTypes": false,
+    // 设置额外的 Python 模块路径
+    "python.analysis.extraPaths": [
+        // 在工作区根目录的 extra.zip 中搜索模块
+        "extra.zip"
+    ],
+    // 禁用 Python 模块自动搜索路径
+    "python.analysis.autoSearchPaths": false,
+    // 禁用 Python 索引编制功能
+    "python.analysis.indexing": false,
+    // 不对工作区中的 Python 代码文件编制索引，除非是打开的文件
+    "python.analysis.userFileIndexingLimit": 0,
+    // 设置名称为 just_test 的第三方包的索引编制方案
+    "python.analysis.packageIndexDepths": [
+        { "name": "just_test", "depth": 3, "includeAllSymbols": true }
+    ],
+    // 启用导入语句的补全
+    "python.analysis.autoImportCompletions": true,
+    // 导入语句的补全采用相对名称
+    "python.analysis.importFormat": "relative",
+    // 启用函数或方法的括号补全
+    "python.analysis.completeFunctionParens": true,
+    // 启用字符串的 f 前缀补全（可能没有效果）
+    "python.analysis.autoFormatStrings": true,
+    // 启用变量类型的嵌入提示
+    "python.analysis.inlayHints.variableTypes": true,
+    // 启用函数或方法返回值的类型嵌入提示
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    // 启用对所有参数的名称嵌入提示
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    // 启用针对 pytest 函数或方法参数类型的嵌入提示
+    "python.analysis.inlayHints.pytestParameters": true,
+    // 禁用对 pytest 的支持，这将导致对 pytestParameters 的设置无效
+    "python.analysis.enablePytestSupport": false,
+    // 设置在运行 Fix All 命令时的行为
+    "python.analysis.fixAll": [
+        "source.unusedImports",
+        "source.convertImportFormat"
+    ],
+    // 指向外部 Node.js（无法在 VSCode 工作区设置中使用）
+    "python.analysis.nodeExecutable": "node",
+    // 禁用字符串的模块导航功能
+    "python.analysis.gotoDefinitionInStringLiteral": false,
+    // 设置 Pylance 仅汇报错误
+    "python.analysis.logLevel": "Error",
+    // 为所有主题自定义 Python 语法高亮
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            // 指定类的颜色
+            "class:python": "#da9797",
+            // 指定声明的颜色，比如，类和函数的定义
+            "*.declaration:python": "#82cb7a"
+        }
+    }
+}

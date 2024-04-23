@@ -1,5 +1,5 @@
 __pycache__/
-.vscode/settings.json
+.vscode/settings*
 .md/
 读我.txt
 temp.py
@@ -7,4 +7,5 @@ last_login.txt
 student.txt
 *.pyc
 *.zip
-test.*
+test*.py
+test/
