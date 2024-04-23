@@ -1,7 +1,7 @@
 {
     // 最严格的模式 strict
     "python.analysis.typeCheckingMode": "strict",
-    // 诊断工作区中的所有 Python 代码文件
+    // 诊断工作区所有以及打开的 Python 代码文件
     "python.analysis.diagnosticMode": "workspace",
     // 需要被诊断的文件的路径信息
     "python.analysis.include": [

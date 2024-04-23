@@ -1,7 +1,7 @@
 {
     // 最嚴格的模式 strict
     "python.analysis.typeCheckingMode": "strict",
-    // 診斷工作區中的所有 Python 程式碼檔案
+    // 診斷工作區所有以及開啟的 Python 程式碼檔案
     "python.analysis.diagnosticMode": "workspace",
     // 需要被診斷的檔案的路徑資訊
     "python.analysis.include": [
