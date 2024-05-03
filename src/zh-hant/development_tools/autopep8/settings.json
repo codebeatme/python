@@ -1,0 +1,42 @@
+{
+    "autopep8.args": [
+        // 反饋更多的資訊
+        "--verbose",
+        // 啟用實驗性修復功能
+        "--experimental",
+        // 僅針對與空白字元有關的問題進行修復
+        "--select", "W2",
+        // 由於給出了 --select，因此 --ignore 不會有任何效果
+        "--ignore", "E2",
+        // 僅檔案的第一行和第二行被修復
+        "--line-range", "1", "2",
+        // 單行程式碼的最大長度
+        "--max-line-length", "40",
+        // --max-line-length 參數將被忽略，因為不檢查行是否超出最大長度
+        "--ignore", "E501",
+        // // 問題 E712 需要的激進層級為 2
+        // "--aggressive", "--aggressive",
+        // // 問題 E712 不會被修復，因為他被 --ignore 排除
+        // "--ignore", "E712",
+        // // 激進的層級為 1
+        // "--aggressive",
+        // // 問題 E712 不會被修復，因為需要的激進層級為 2
+        // "--select", "E712",
+        // 僅檔案的第一行和第二行被修復
+        "--line-range", "1", "2",
+    ],
+    // 將工作區根目錄的 my_src 資料夾，設定為執行延伸模組 autopep8 時，命令列的當前工作目錄
+    "autopep8.cwd": "${workspaceFolder}\\my_src",
+    // 將資料夾 python-3.11.0 中的 python.exe 設定為執行 autopep8 套件的解譯器
+    "autopep8.interpreter": [
+        "…\\python-3.11.0\\python.exe"
+    ],
+    // 使用資料夾 python-3.10.10 中的 python.exe 執行 autopep8 套件
+    "autopep8.path": [
+        "…\\python-3.10.10\\python.exe",
+        "-m",
+        "autopep8"
+    ],
+    // 設定優先使用 Python 解譯器原本擁有的 autopep8 套件
+    "autopep8.importStrategy": "fromEnvironment",
+}

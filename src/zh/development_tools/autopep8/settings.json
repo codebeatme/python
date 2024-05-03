@@ -1,0 +1,42 @@
+{
+    "autopep8.args": [
+        // 反馈更多的信息
+        "--verbose",
+        // 启用实验性修复功能
+        "--experimental",
+        // 仅针对与空白有关的问题进行修复
+        "--select", "W2",
+        // 由于给出了 --select，因此 --ignore 不会有任何效果
+        "--ignore", "E2",
+        // 仅文件的第一行和第二行被修复
+        "--line-range", "1", "2",
+        // 单行代码的最大长度
+        "--max-line-length", "40",
+        // --max-line-length 参数将被忽略，因为不检查行是否超出最大长度
+        "--ignore", "E501",
+        // // 问题 E712 需要的激进级别为 2
+        // "--aggressive", "--aggressive",
+        // // 问题 E712 不会被修复，因为他被 --ignore 排除
+        // "--ignore", "E712",
+        // // 激进的级别为 1
+        // "--aggressive",
+        // // 问题 E712 不会被修复，因为需要的激进级别为 2
+        // "--select", "E712",
+        // 仅文件的第一行和第二行被修复
+        "--line-range", "1", "2",
+    ],
+    // 将工作区根目录的 my_src 文件夹，设置为运行扩展 autopep8 时，命令行的当前工作目录
+    "autopep8.cwd": "${workspaceFolder}\\my_src",
+    // 将文件夹 python-3.11.0 中的 python.exe 设置为运行 autopep8 包的解释器
+    "autopep8.interpreter": [
+        "…\\python-3.11.0\\python.exe"
+    ],
+    // 使用文件夹 python-3.10.10 中的 python.exe 运行 autopep8 包
+    "autopep8.path": [
+        "…\\python-3.10.10\\python.exe",
+        "-m",
+        "autopep8"
+    ],
+    // 设置优先使用 Python 解释器原本拥有的 autopep8 包
+    "autopep8.importStrategy": "fromEnvironment",
+}
