@@ -25,7 +25,7 @@
         // 僅檔案的第一行和第二行被修復
         "--line-range", "1", "2",
     ],
-    // 將工作區根目錄的 my_src 資料夾，設定為執行延伸模組 autopep8 時，命令列的當前工作目錄
+    // 將工作區根目錄的 my_src 資料夾，設定為執行延伸模組 autopep8 時，命令列的目前工作目錄
     "autopep8.cwd": "${workspaceFolder}\\my_src",
     // 將資料夾 python-3.11.0 中的 python.exe 設定為執行 autopep8 套件的解譯器
     "autopep8.interpreter": [

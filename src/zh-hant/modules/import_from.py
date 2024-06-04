@@ -1,4 +1,4 @@
-# teacher 模組的特性 count，level，show 將被繫結至當前命名空間
+# teacher 模組的特性 count，level，show 將被繫結至目前命名空間
 from school.teacher import *
 
 # 此處的 count 指向 teacher 模組的 count 特性
