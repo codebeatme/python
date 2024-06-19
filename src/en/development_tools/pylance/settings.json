@@ -1,0 +1,87 @@
+{
+    // The strictest mode strict
+    "python.analysis.typeCheckingMode": "strict",
+    // Diagnose all and opened Python code files in the workspace
+    "python.analysis.diagnosticMode": "workspace",
+    // The path information of the file to be diagnosed
+    "python.analysis.include": [
+        // Three-character folders beginning with s and c
+        "s?c\\",
+        // First-level subfolders of the src folder
+        "src\\*\\",
+        // Files or folders in the src folder or any of its subfolders that end with s.py
+        "src\\**\\*s.py"
+    ],
+    // Path information for files that do not require diagnostics
+    "python.analysis.exclude": [
+        // A file or folder ending with test.py in the src folder or any subfolder
+        "src\\**\\*test.py"
+    ],
+    // Path information for files that ignore diagnostic results
+    "python.analysis.ignore": [
+        // The first-level subfolders of the src folder whose name contains test
+        "src\\*test*\\"
+    ],
+    // Customize the severity level of the Python type check rule
+    "python.analysis.diagnosticSeverityOverrides": {
+        // Imports that cannot be resolved
+        "reportMissingImports": "warning"
+    },
+    // Specify the type stub file directory as the my_typings folder in the workspace
+    "python.analysis.stubPath": "my_typings",
+    // Not to analyze the code file corresponding to the module, when the type stub file does not exist
+    "python.analysis.useLibraryCodeForTypes": false,
+    // Extra Python module paths
+    "python.analysis.extraPaths": [
+        // Search for modules in extra.zip in the root directory of the workspace
+        "extra.zip"
+    ],
+    // Disable the automatic Python module search paths
+    "python.analysis.autoSearchPaths": false,
+    // Disable Python indexing
+    "python.analysis.indexing": false,
+    // Not to index Python code files in the workspace, unless they are opened
+    "python.analysis.userFileIndexingLimit": 0,
+    // Indexing scheme for a third-party package named just_test
+    "python.analysis.packageIndexDepths": [
+        { "name": "just_test", "depth": 3, "includeAllSymbols": true }
+    ],
+    // Enable completion of import statements
+    "python.analysis.autoImportCompletions": true,
+    // Completion of import statements uses relative names
+    "python.analysis.importFormat": "relative",
+    // Enable parenthesis completion for functions or methods
+    "python.analysis.completeFunctionParens": true,
+    // Enable f prefix completion of strings (may have no effect)
+    "python.analysis.autoFormatStrings": true,
+    // Enable inlay hints for variable types
+    "python.analysis.inlayHints.variableTypes": true,
+    // Enable inlay hints for return value types
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    // Enable inlay hints for all parameter names
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    // Enable inlay hints for the parameter types of pytest functions or methods
+    "python.analysis.inlayHints.pytestParameters": true,
+    // Disable support for pytest, which will invalidate the pytestParameters setting
+    "python.analysis.enablePytestSupport": false,
+    // Set the behavior when running the Fix All command
+    "python.analysis.fixAll": [
+        "source.unusedImports",
+        "source.convertImportFormat"
+    ],
+    // External Node.js (not available in VSCode workspace settings)
+    "python.analysis.nodeExecutable": "node",
+    // Disable module navigation for strings
+    "python.analysis.gotoDefinitionInStringLiteral": false,
+    // Set Pylance to report errors only
+    "python.analysis.logLevel": "Error",
+    // Customize Python syntax highlighting for all themes
+    "editor.semanticTokenColorCustomizations": {
+        "rules": {
+            // Specify the color of the class
+            "class:python": "#da9797",
+            // Specify the color of declarations, e.g., class and function definitions
+            "*.declaration:python": "#82cb7a"
+        }
+    }
+}
