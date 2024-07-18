@@ -24,7 +24,7 @@ print(add(z=1))
 # x 作為位置參數被使用
 print(add(1, z=3))
 
-# 定了乘法函式
+# 定義乘法函式
 def mlp(*nums, **info):
     # 顯示關鍵字參數
     print(info)

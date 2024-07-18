@@ -1,8 +1,8 @@
 # 一个简单的类 Apple
 class Apple:
-    # 变量
+    # 变量 variety
     variety = '普通苹果'
-    # 静态方法
+    # 静态方法 show
     @staticmethod
     def show():
         print(Apple.variety)

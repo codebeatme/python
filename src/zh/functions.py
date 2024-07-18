@@ -24,7 +24,7 @@ print(add(z=1))
 # x 作为位置参数被使用
 print(add(1, z=3))
 
-# 定了乘法函数
+# 定义乘法函数
 def mlp(*nums, **info):
     # 显示关键字参数
     print(info)

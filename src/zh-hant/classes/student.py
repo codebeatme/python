@@ -1,6 +1,6 @@
 # 一個表示學生的類別 Student
 class Student:
-    # 類別變數
+    # 類別變數 count
     count = 0
     # 建構子
     def __init__(self, n, a):
@@ -8,17 +8,17 @@ class Student:
         self.name = n
         self.age = a
 
-    # 執行個體方法
+    # 執行個體方法 info
     def info(self):
         print(f'{self.name} {self.age}')
 
-    # 類別方法
+    # 類別方法 show
     @classmethod
     def show(cls):
-        # 通過參數 cls 讀取類別變數
+        # 通過參數 cls 讀取類別變數 count
         print(f'一共 {cls.count} 個學生')
         
-    # 靜態方法
+    # 靜態方法 set_count
     @staticmethod
     def set_count(c):
         # 只能通過類別存取類別變數
