@@ -36,7 +36,7 @@
         // Search for modules in extra.zip in the root directory of the workspace
         "extra.zip"
     ],
-    // Disable the automatic Python module search paths
+    // Disable the automatic Python Module Search Paths
     "python.analysis.autoSearchPaths": false,
     // Disable Python indexing
     "python.analysis.indexing": false,
