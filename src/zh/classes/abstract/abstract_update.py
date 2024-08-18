@@ -12,13 +12,13 @@ def show(self):
     pass
 Color.show = show
 
-print(f'创建第一个 Black 实例')
+print('创建第一个 Black 实例')
 # 创建实例没有问题
 Black()
 
 # 更新抽象类 Color 和 Black
 update_abstractmethods(Color)
 update_abstractmethods(Black)
-print(f'创建第二个 Black 实例')
+print('创建第二个 Black 实例')
 # ERROR 不能创建实例，因为 Black 没有实现抽象方法 show
 Black()
