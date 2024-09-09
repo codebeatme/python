@@ -16,7 +16,7 @@ print('Create the first Black instance')
 # There is no problem with creating an instance
 Black()
 
-# Update abstract classes Color and Black
+# Update the abstract classes Color and Black
 update_abstractmethods(Color)
 update_abstractmethods(Black)
 print('Create the second Black instance')

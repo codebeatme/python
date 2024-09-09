@@ -3,7 +3,7 @@
     "python.analysis.typeCheckingMode": "strict",
     // Diagnose all and opened Python code files in the workspace
     "python.analysis.diagnosticMode": "workspace",
-    // The path information of the file to be diagnosed
+    // The path information of the files to be diagnosed
     "python.analysis.include": [
         // Three-character folders beginning with s and c
         "s?c\\",
@@ -22,14 +22,14 @@
         // The first-level subfolders of the src folder whose name contains test
         "src\\*test*\\"
     ],
-    // Customize the severity level of the Python type check rule
+    // Customize the severity level of Python type checking rules
     "python.analysis.diagnosticSeverityOverrides": {
         // Imports that cannot be resolved
         "reportMissingImports": "warning"
     },
     // Specify the type stub file directory as the my_typings folder in the workspace
     "python.analysis.stubPath": "my_typings",
-    // Not to analyze the code file corresponding to the module, when the type stub file does not exist
+    // This will not analyze the module's corresponding code file when the type stub file does not exist
     "python.analysis.useLibraryCodeForTypes": false,
     // Extra Python module paths
     "python.analysis.extraPaths": [
@@ -40,9 +40,9 @@
     "python.analysis.autoSearchPaths": false,
     // Disable Python indexing
     "python.analysis.indexing": false,
-    // Not to index Python code files in the workspace, unless they are opened
+    // This will not index Python code files in the workspace, unless they are opened
     "python.analysis.userFileIndexingLimit": 0,
-    // Indexing scheme for a third-party package named just_test
+    // Indexing scheme for the third-party package named just_test
     "python.analysis.packageIndexDepths": [
         { "name": "just_test", "depth": 3, "includeAllSymbols": true }
     ],
@@ -62,7 +62,7 @@
     "python.analysis.inlayHints.callArgumentNames": "all",
     // Enable inlay hints for the parameter types of pytest functions or methods
     "python.analysis.inlayHints.pytestParameters": true,
-    // Disable support for pytest, which will invalidate the pytestParameters setting
+    // Disable support for pytest, which will invalidate the pytestParameters setting item
     "python.analysis.enablePytestSupport": false,
     // Set the behavior when running the Fix All command
     "python.analysis.fixAll": [

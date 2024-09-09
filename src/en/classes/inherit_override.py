@@ -2,13 +2,13 @@
 class Unit:
     # The method used to launch the attack
     def attack(self):
-        print('Unit launch an attack')
+        print('Unit launches an attack')
 
 class Hero(Unit):
     # This method will be overridden by the attack defined later
     def attack(self, times):
         while times > 0:
-            print('Hero launch an attack')
+            print('Hero launches an attack')
             times -= 1
 
     # This overrides the Unit's attack method and overrides the previously defined attack

@@ -21,7 +21,7 @@ class Student:
     # Static method set_count
     @staticmethod
     def set_count(c):
-        # The class variable count can only be accessed through the class
+        # The class variable count can only be accessed through classes
         Student.count = c
         print(f'The number of students is set to {Student.count}')
 

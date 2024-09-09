@@ -10,7 +10,7 @@ class Plant:
 # A class that inherits from the Plant class
 class Tree(Plant):
 
-    # Methods of displaying information
+    # A method to display information
     def show(self):
         print(self.name)
 
