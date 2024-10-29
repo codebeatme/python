@@ -50,7 +50,7 @@
     "python.analysis.autoImportCompletions": true,
     // 匯入陳述式的自動完成采用相對名稱
     "python.analysis.importFormat": "relative",
-    // 啟用函式或方法的括號自動完成
+    // 啟用函式或方法的括弧自動完成
     "python.analysis.completeFunctionParens": true,
     // 啟用字串的 f 首碼自動完成（可能沒有效果）
     "python.analysis.autoFormatStrings": true,
