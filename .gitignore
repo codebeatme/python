@@ -9,3 +9,5 @@ student.txt
 *.zip
 test*.py
 test/
+test.*
+src/zh/file_system/file_handling/*.md
