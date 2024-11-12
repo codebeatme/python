@@ -3,7 +3,7 @@ from datetime import date
 
 # 自訂 JSON 編碼器 MyEncoder
 class MyEncoder(json.JSONEncoder):
-    # 建構函式需要保留 JSONEncoder 的關鍵字參數
+    # 建構子需要保留 JSONEncoder 的關鍵字參數
     def __init__(self, date_template, **kwds) -> None:
         super().__init__(**kwds)
         super().__init__()

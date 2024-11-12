@@ -4,3 +4,4 @@ with open('with.txt', 'w', encoding='utf8') as file:
 
 # ERROR 文件对象已经被关闭
 file.write('又一条 with 语句')
+file.__exit__

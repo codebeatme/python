@@ -4,3 +4,4 @@ with open('with.txt', 'w', encoding='utf8') as file:
 
 # ERROR 檔案物件已經被關閉
 file.write('又一條 with 陳述式')
+file.__exit__
