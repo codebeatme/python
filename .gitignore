@@ -10,4 +10,3 @@ student.txt
 test*.py
 test/
 test.*
-src/zh/file_system/file_handling/*.md
